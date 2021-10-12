@@ -20,24 +20,13 @@
 	<meta name="twitter:image:src" content="http://avro.im/images/avroim_og.jpg">
 	<meta name="twitter:image:width" content="1200">
 	<meta name="twitter:image:height" content="627">
-	<!-- windows tile -->
-	<meta name="application-name" content="avro.im"/>
-	<meta name="msapplication-TileColor" content="#1f1f1f"/>
-	<meta name="msapplication-square70x70logo" content="/images/tile-tiny.png"/>
-	<meta name="msapplication-square150x150logo" content="/images/tile-square.png"/>
-	<meta name="msapplication-wide310x150logo" content="/images/tile-wide.png"/>
-	<meta name="msapplication-square310x310logo" content="/images/tile-large.png"/>
-	<!-- end windows tile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
 	<meta name="mobile-web-app-capable" content="yes">
-	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
 	<title>avro.im</title>
-	<!-- build:css css/app.css -->
-	<link rel="stylesheet" href="vendor/jquery.atwho/dist/css/jquery.atwho.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="/css/main.css" type="text/css" media="screen">
-	<!-- endbuild -->
+	<link rel="stylesheet" href="css/main.css"/>
 	<style type="text/css" media="screen">
 		#loader {
 			position: absolute;
@@ -55,7 +44,7 @@
 
 		#loader h1 {
 			font-family: 'Avenir', 'Arial', sans-serif;
-			color: #ffa729;
+			color: #ffa544;
 			text-transform: uppercase;
 			font-size: 1em;
 			letter-spacing: 1.5px;
@@ -63,7 +52,6 @@
 			width: 200px;
 			margin-top: 20px;
 			-webkit-animation: fade 3s infinite;
-			animation: fade 3s infinite;
 		}
 
 		.container {
@@ -80,42 +68,38 @@
 
 		.ex {
 			font-family: 'Avenir', 'Arial', sans-serif;
-			color: #ffa729;
+			color: #ffa544;
 			text-transform: uppercase;
+			font-size: 1em;
 			letter-spacing: 1.5px;
 			text-align: center;
 			width: 200px;
+			margin-top: 20px;
 			-webkit-animation: fade 3s infinite;
-			animation: fade 3s infinite;
+			font-family: 'flamenco';
 			font-size: 4em;
 			width: 40px;
 			height: 40px;
-			margin-top: -24px;
+			margin-top: -17px;
 			display: inline-block;
-			border: 4px double #ffa729;
+			border: 4px double #ffa544;
 		}
 
 		.ex:nth-child(1) {
 			-webkit-animation: spin1 3s infinite 1s;
 			-webkit-transform-origin: 50% 52%;
-			animation: spin1 3s infinite 1s;
-			transform-origin: 50% 52%;
 			margin-left: 10px;
 		}
 
 		.ex:nth-child(2) {
 			-webkit-animation: spin2 3s infinite 1s;
 			-webkit-transform-origin: 50% 52%;
-			animation: spin2 3s infinite 1s;
-			transform-origin: 50% 52%;
 			margin-left: -20px;
 		}
 
 		.ex:nth-child(3) {
 			-webkit-animation: spin2 3s infinite 1s;
 			-webkit-transform-origin: 50% 52%;
-			animation: spin2 3s infinite 1s;
-			transform-origin: 50% 52%;
 			margin-left: 10px;
 		}
 
@@ -123,97 +107,79 @@
 			margin-left: -1px;
 			-webkit-animation: spin1 3s infinite 1s;
 			-webkit-transform-origin: 50% 52%;
-			animation: spin1 3s infinite 1s;
-			transform-origin: 50% 52%;
 			margin-left: -20px;
 		}
 
 		@-webkit-keyframes spin1 {
 			0% {
 				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
 			}
 
 			100% {
 				-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
 			}
 		}
 		@-moz-keyframes spin1 {
 			0% {
 				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
 			}
 
 			100% {
 				-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
 			}
 		}
 		@-o-keyframes spin1 {
 			0% {
 				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
 			}
 
 			100% {
 				-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
 			}
 		}
 		@keyframes spin1 {
 			0% {
 				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
 			}
 
 			100% {
 				-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
 			}
 		}
 		@-webkit-keyframes spin2 {
 			0% {
 				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
 			}
 
 			100% {
 				-webkit-transform: rotate(-360deg);
-				transform: rotate(-360deg);
 			}
 		}
 		@-moz-keyframes spin2 {
 			0% {
 				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
 			}
 
 			100% {
 				-webkit-transform: rotate(-360deg);
-				transform: rotate(-360deg);
 			}
 		}
 		@-o-keyframes spin2 {
 			0% {
 				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
 			}
 
 			100% {
 				-webkit-transform: rotate(-360deg);
-				transform: rotate(-360deg);
 			}
 		}
 		@keyframes spin2 {
 			0% {
 				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
 			}
 
 			100% {
 				-webkit-transform: rotate(-360deg);
-				transform: rotate(-360deg);
 			}
 		}
 		@-webkit-keyframes fade {
@@ -250,12 +216,6 @@
 
 			100% {
 				opacity: 1;
-			}
-		}
-
-		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-			main {
-				display: block;
 			}
 		}
 	</style>
@@ -302,12 +262,12 @@
 				<div class="drafts">
 					<h2>Drafts</h2>
 					<ul>
-						<li><a href="#">Draft 1</a></li>
-						<li><a href="#">Draft 2</a></li>
-						<li><a href="#">Draft 3</a></li>
-						<li><a href="#">Draft 4</a></li>
-						<li><a href="#">Draft 5</a></li>
-					</ul>
+						<li><a href="index.html#">Draft 1</a></li>
+						<li><a href="index.html#">Draft 2</a></li>
+						<li><a href="index.html#">Draft 3</a></li>
+						<li><a href="index.html#">Draft 4</a></li>
+						<li><a href="index.html#">Draft 5</a></li>
+					<ul>
 				</div>
 				<div class="social">
 					<a target="_blank" href="https://www.facebook.com/avrokeyboard">
@@ -324,15 +284,7 @@
 			</div>
 		</footer>
 	</div>
-	<!-- build:js js/app.js -->
-	<script src="vendor/jquery/dist/jquery.js"></script>
-	<script src="vendor/Caret.js/src/jquery.caret.js"></script>
-	<script src="vendor/jquery.atwho/dist/js/jquery.atwho.js"></script>
-	<script src="vendor/jquery-autosize/jquery.autosize.js"></script>
-	<script src="vendor/jquery-touchswipe/jquery.touchSwipe.js"></script>
-	<script src="vendor/device.js/lib/device.js"></script>
-	<script src="js/avro.min.js"></script>
+	
 	<script src="js/main.js"></script>
-	<!-- endbuild -->
 </body>
 </html>
